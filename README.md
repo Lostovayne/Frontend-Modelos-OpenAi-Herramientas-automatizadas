@@ -1,30 +1,104 @@
-# React + TypeScript + Vite
+# React Integraciones Openai y ChatGPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+React GPT es un proyecto que utiliza React para construir una aplicación web. Este proyecto utiliza las siguientes tecnologías:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [OpenAI](https://openai.com/)
+- [ChatGPT](https://chat.openai.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clona este repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/lostovayne/react-gpt.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navega hasta el directorio del proyecto:
+
+```bash
+cd react-gpt
+```
+
+3. Instala los paquetes necesarios:
+
+```bash
+npm install
+```
+
+## Scripts de ejecución del proyecto
+
+1. Ejecuta el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+2. Ejecuta el servidor de producción:
+
+```bash
+npm run build
+```
+
+## Directorio de trabajo
+
+- 📂 react-gpt
+  - 📂 src
+    - 📂 core
+    - 📂 interfaces
+    - 📂 presentation
+        - 📂 pages
+            - 📂 assistant
+            - 📂 audio-to-text
+            - 📂 image-generation
+            - 📂 image-tunning
+            - 📂 orthography
+            - 📂 pros-cons
+            - 📂 pros-cons-stream
+            - 📂 text-to-audio
+            - 📂 translate
+            - 📂 voice-to-text
+            - 📂 voice-tunning
+        - 📂 router
+        - 📂 template
+        - 📂 layout
+        - 📂 components
+  - 📄 .gitignore
+  - 📄 package.json
+  - 📄 README.md
+  - 📄 tsconfig.json
+  - 📄 vite.config.ts
+
+
+## Funcionalidades
+
+- [Asistente](https://react-gpt.netlify.app/assistant)
+- [Audio a texto](https://react-gpt.netlify.app/audio-to-text)
+- [Ortografía](https://react-gpt.netlify.app/orthography)
+- [Pros & Cons](https://react-gpt.netlify.app/pros-cons)
+- [Traducir](https://react-gpt.netlify.app/translate)
+
+
+
+## Documentación
+
+- [Documentación de React](https://reactjs.org/docs/getting-started.html)
+- [Documentación de React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+
+## Cualquier duda o consulta, por favor, contacta conmigo en:
+
+- [Twitter](https://twitter.com/lostovayne)
+- [GitHub](https://github.com/lostovayne)
+
+## Creador:
+
+- [Franko Barrera](https://github.com/lostovayne)
+
+## Licencia
+MIT
+
