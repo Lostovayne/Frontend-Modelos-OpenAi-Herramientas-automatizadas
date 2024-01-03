@@ -14,10 +14,9 @@ export const OrthographyPage = () => {
     const handlePost = async (text: string) => {
         setIsLoading(true);
         setmessages([...messages, { text, isGpt: false }]);
-        // TODO: UseCase
-
+        // Use Cases
         setIsLoading(false);
-        // Todo: añadir el mensaje de gpt en true
+        // añadir el mensaje de gpt en true
     };
 
     return (
