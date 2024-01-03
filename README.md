@@ -10,6 +10,11 @@ React GPT es un proyecto que utiliza React para construir una aplicación web. E
 - [OpenAI](https://openai.com/)
 - [ChatGPT](https://chat.openai.com/)
 
+## Demo
+![screencapture-127-0-0-1-5173-orthography-2024-01-03-00_34_53](https://github.com/Lostovayne/React-usando-React-Router-dom-Tailwind-Typescript-e-integraciones-de-Openai-para-modelos/assets/92962731/073f1485-947b-42f4-ae34-3d8e57e11583)
+
+  
+
 
 ## Instalación
 
