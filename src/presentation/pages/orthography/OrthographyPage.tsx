@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-    GptMessage,
-    TextMessageBox,
-    TextMessageBoxFile,
-    TextMessageBoxSelect,
-    TypingLoader,
-} from "../../components";
+import { GptMessage, TextMessageBox, TypingLoader } from "../../components";
 import { MyMessage } from "../../components/chat-bubbles/MyMessage";
 
 interface Message {
