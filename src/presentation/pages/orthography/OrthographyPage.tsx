@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { GptMessage, TextMessageBox, TextMessageBoxFile, TypingLoader } from "../../components";
+import {
+    GptMessage,
+    TextMessageBox,
+    TextMessageBoxFile,
+    TextMessageBoxSelect,
+    TypingLoader,
+} from "../../components";
 import { MyMessage } from "../../components/chat-bubbles/MyMessage";
 
 interface Message {
@@ -42,12 +48,20 @@ export const OrthographyPage = () => {
                 </div>
             </div>
 
-            {/* <TextMessageBox
+            <TextMessageBox
                 onSendMessage={handlePost}
                 placeholder="Escribe tu mensaje..."
                 disableCorrection
+            />
+            {/* <TextMessageBoxFile onSendMessage={handlePost} placeholder="Escribe tu mensaje..." /> */}
+            {/* 
+            <TextMessageBoxSelect
+                onSendMessage={console.log}
+                options={[
+                    { id: "1", text: "Option 1" },
+                    { id: "2", text: "Option 2" },
+                ]}
             /> */}
-            <TextMessageBoxFile onSendMessage={handlePost} placeholder="Escribe tu mensaje..." />
         </div>
     );
 };
