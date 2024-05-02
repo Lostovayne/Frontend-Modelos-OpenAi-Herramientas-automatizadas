@@ -13,7 +13,7 @@ export const GptOrthographyMessages = ({ userScore, errors, message }: Props) =>
           <h3>Puntaje: {userScore}% escrito correctamente</h3>
           <p>{message}</p>
 
-          {errors.length === 0 ? (
+          {errors?.length === 0 ? (
             <p>No se han encontrado errores</p>
           ) : (
             <>
