@@ -40,7 +40,7 @@ export const OrthographyPage = () => {
     <div className="chat-container">
       <div className="chat-messages">
         <div className="gap-y-2 grid grid-cols-12">
-          <GptMessage text="¡Hola! Soy ChatGPT, un asistente de inteligencia artificial diseñado para ayudarte en tus correcciones de texto. Si necesitas pulir tu escritura, corregir gramática o simplemente mejorar la claridad de tus textos, ¡estoy aquí para ayudarte!" />
+          <GptMessage text="¡Hola! Soy ChatGPT, un asistente de inteligencia artificial diseñado para ayudarte en tus correcciones de texto." />
 
           {messages.map((message, index) =>
             message.isGpt ? (
