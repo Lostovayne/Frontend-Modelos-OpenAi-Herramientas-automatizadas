@@ -42,7 +42,7 @@ export const OrthographyPage = () => {
         <div className="gap-y-2 grid grid-cols-12">
           <GptMessage text="¡Hola! Soy ChatGPT, un asistente de inteligencia artificial diseñado para ayudarte en tus correcciones de texto." />
 
-          {messages.map((message, index) =>
+          {messages?.map((message, index) =>
             message.isGpt ? (
               <GptOrthographyMessages key={index} {...message.info!} />
             ) : (
@@ -59,15 +59,6 @@ export const OrthographyPage = () => {
       </div>
 
       <TextMessageBox onSendMessage={handlePost} placeholder="Escribe tu mensaje..." disableCorrection />
-      {/* <TextMessageBoxFile onSendMessage={handlePost} placeholder="Escribe tu mensaje..." /> */}
-      {/* 
-            <TextMessageBoxSelect
-                onSendMessage={console.log}
-                options={[
-                    { id: "1", text: "Option 1" },
-                    { id: "2", text: "Option 2" },
-                ]}
-            /> */}
     </div>
   );
 };
