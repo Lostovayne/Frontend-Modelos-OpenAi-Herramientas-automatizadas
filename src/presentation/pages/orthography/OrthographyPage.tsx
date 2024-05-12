@@ -22,14 +22,20 @@ export const OrthographyPage = () => {
     setIsLoading(true);
     setmessages([...messages, { text, isGpt: false }]);
 
-    const { ok, userScore, errors, message } = await orthographyCheckUseCase(text);
-
-    console.log({errors})
+    const { ok, userScore, errors, message } = await orthographyCheckUseCase(
+      text
+    );
 
     if (!ok) {
-      setmessages((prev) => [...prev, { text: "No se pudo realizar la corrección", isGpt: true }]);
+      setmessages((prev) => [
+        ...prev,
+        { text: "No se pudo realizar la corrección", isGpt: true },
+      ]);
     } else {
-      setmessages((prev) => [...prev, { text: message, isGpt: true, info: { errors, userScore, message } }]);
+      setmessages((prev) => [
+        ...prev,
+        { text: message, isGpt: true, info: { errors, userScore, message } },
+      ]);
     }
 
     //! añadir el mensaje de gpt en true
@@ -58,7 +64,11 @@ export const OrthographyPage = () => {
         </div>
       </div>
 
-      <TextMessageBox onSendMessage={handlePost} placeholder="Escribe tu mensaje..." disableCorrection />
+      <TextMessageBox
+        onSendMessage={handlePost}
+        placeholder="Escribe tu mensaje..."
+        disableCorrection
+      />
     </div>
   );
 };
